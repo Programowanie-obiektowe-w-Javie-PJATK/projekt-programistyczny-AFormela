@@ -20,7 +20,6 @@ public class CompareStrings extends JFrame {
     private JLabel CompareInsertedTexts;
     private JPanel appPanel;
 
-
     public CompareStrings() {
         add(CompareText);
         setTitle("CryptingApp");
