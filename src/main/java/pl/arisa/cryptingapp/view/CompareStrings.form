@@ -3,11 +3,12 @@
   <grid id="27dc6" binding="CompareText" layout-manager="GridLayoutManager" row-count="15" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1410" height="1448"/>
+      <xy x="20" y="20" width="1920" height="1448"/>
     </constraints>
     <properties>
-      <minimumSize width="1410" height="1448"/>
-      <preferredSize width="1410" height="1448"/>
+      <maximumSize width="1920" height="1020"/>
+      <minimumSize width="1920" height="1020"/>
+      <preferredSize width="1920" height="1020"/>
     </properties>
     <border type="none"/>
     <children>
@@ -29,7 +30,10 @@
       </vspacer>
       <component id="952b" class="javax.swing.JButton" binding="compareTextsButton" default-binding="true">
         <constraints>
-          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="44"/>
+            <preferred-size width="300" height="44"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-10387044"/>
@@ -177,7 +181,10 @@
       </vspacer>
       <component id="fb664" class="javax.swing.JButton" binding="returnToMenuButton" default-binding="true">
         <constraints>
-          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="44"/>
+            <preferred-size width="300" height="44"/>
+          </grid>
         </constraints>
         <properties>
           <background color="-10387044"/>
