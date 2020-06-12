@@ -8,6 +8,8 @@ public class CompareStrings extends JFrame{
     private JPanel CompareText;
     private JTextField SecondText;
     private JTextField FirstText;
+    private JLabel aLabel;
+    private JLabel bLabel;
     private JPanel appPanel;
 
 

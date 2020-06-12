@@ -12,11 +12,5 @@ public class Startup {
 
         MainMenu mainMenu = new MainMenu();
         mainMenu.setVisible(true);
-
-        App app = new App();
-        app.setVisible(true);
-
-        CompareStrings compareStrings = new CompareStrings();
-        compareStrings.setVisible(true);
     }
 }

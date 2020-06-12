@@ -10,7 +10,17 @@ public class Crypter implements ICrypter {
     }
 
     @Override
+    public String crypt(String value, int a, int b) {
+        return null;
+    }
+
+    @Override
     public String decrypt(String value) {
+        return null;
+    }
+
+    @Override
+    public String decrypt(String value, int a, int b) {
         return null;
     }
 
