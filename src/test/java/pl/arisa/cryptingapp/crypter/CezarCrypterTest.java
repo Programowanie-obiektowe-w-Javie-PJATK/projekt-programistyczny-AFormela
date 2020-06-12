@@ -29,4 +29,13 @@ class CezarCrypterTest {
         CezarCrypter cezarCrypter = new CezarCrypter();
         assertEquals("VENI", cezarCrypter.decrypt("XYZK", 3, 12));
     }
+
+    @Test
+    void encryptingAndDecryptingShouldWorkInBothSides() {
+        ICrypter crypter = new CezarCrypter();
+        String[] phrasesToTest = {"jakies zdanie o malej wartosci", "inny test zlozony z malych literek", "coskrotkiego", "ala ma kota", "coooooooooooooooooooooooooooooooosdluuuuuuuuuuuuuuuuuuuuuuugiegoooooooooo"};
+        for(String phrase : phrasesToTest) {
+            assertEquals(phrase, crypter.decrypt(crypter.crypt(phrase)));
+        }
+    }
 }

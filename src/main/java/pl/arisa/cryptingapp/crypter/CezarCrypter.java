@@ -43,7 +43,7 @@ public class CezarCrypter extends Crypter implements ICrypter {
             int asciiOfA = (int)character >= 97 ? 97 : 65;
             int characterAscii = (int)character - asciiOfA;
             int diff = characterAscii - b;
-            while(diff % a != 0) diff += 26;
+            while(diff < 0 || diff % a != 0) diff += 26;
             return (char)(((diff/ a) % 26)+asciiOfA);
         }
     }

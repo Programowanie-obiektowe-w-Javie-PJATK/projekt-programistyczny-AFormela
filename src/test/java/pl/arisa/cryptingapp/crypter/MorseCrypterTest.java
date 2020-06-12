@@ -37,4 +37,13 @@ public class MorseCrypterTest {
         ICrypter decrypter = new MorseCrypter();
         assertEquals(expected, decrypter.decrypt(sentence));
     }
+
+    @Test
+    void encryptingAndDecryptingShouldWorkInBothSides() {
+        ICrypter crypter = new MorseCrypter();
+        String[] phrasesToTest = {"jakies zdanie o malej wartosci", "inny test zlozony z malych literek", "coskrotkiego", "ala ma kota", "coooooooooooooooooooooooooooooooosdluuuuuuuuuuuuuuuuuuuuuuugiegoooooooooo"};
+        for(String phrase : phrasesToTest) {
+            assertEquals(phrase, crypter.decrypt(crypter.crypt(phrase)));
+        }
+    }
 }
