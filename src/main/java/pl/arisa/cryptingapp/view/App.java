@@ -17,8 +17,10 @@ import static java.lang.Integer.parseInt;
 public class App extends JFrame {
     private JLabel MethodName;
     private JPanel CryptoMethod;
-    private JTextField InputText;
-    private JTextField OutputText;
+    private JPanel InputTextPanel;
+    private JPanel OutputTextPanel;
+    private JTextPane InputText;
+    private JTextPane OutputText;
     private JButton saveToFileButton;
     private JButton decryptButton;
     private JButton encryptButton;
@@ -122,7 +124,7 @@ public class App extends JFrame {
                 int userSelection = fileChooser.showSaveDialog(getContentPane());
                 if(userSelection == JFileChooser.APPROVE_OPTION) {
                     File fileToLoad = fileChooser.getSelectedFile();
-                    FileManager fileManager = new FileManager(fileToLoad.getPath());
+                    FileManager fileManager = new FileManager(fileToLoad);
                     fileManager.saveToFile(OutputText.getText());
                 }
             }

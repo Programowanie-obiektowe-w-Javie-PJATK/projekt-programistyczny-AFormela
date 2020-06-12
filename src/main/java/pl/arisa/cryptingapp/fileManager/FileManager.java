@@ -4,15 +4,15 @@ import java.io.*;
 import java.util.Scanner;
 
 public class FileManager implements IFileManager {
-    private final String path;
+    private File file;
 
     public FileManager(String path) {
-        this.path = path;
+        this.file = new File(path);
     }
+    public FileManager(File file) { this.file = file; }
 
     @Override
     public String loadFromFile() {
-        File file = new File(path);
         StringBuilder text = new StringBuilder();
         try {
             Scanner inputData = new Scanner(file);
@@ -29,9 +29,10 @@ public class FileManager implements IFileManager {
     @Override
     public void saveToFile(String value) {
         try {
-            FileWriter writer = new FileWriter(this.path, true);
+            FileWriter writer = new FileWriter(file.getPath(), true);
             PrintWriter output = new PrintWriter(writer);
             output.println(value);
+            output.close();
         } catch(IOException e) {
             System.out.println("Problem z zapisem do pliku");
         }
