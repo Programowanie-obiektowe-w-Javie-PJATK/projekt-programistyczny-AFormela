@@ -12,6 +12,7 @@ public class CompareStrings extends JFrame {
     private JTextPane ResultPane2;
     private JPanel ResultPanel;
     private JButton returnToMenuButton;
+    private JLabel CompareInsertedTexts;
     private JPanel appPanel;
 
 

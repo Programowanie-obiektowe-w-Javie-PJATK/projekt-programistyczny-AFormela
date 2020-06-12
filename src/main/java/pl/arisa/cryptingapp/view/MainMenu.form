@@ -52,18 +52,6 @@
           <verticalAlignment value="0"/>
         </properties>
       </component>
-      <component id="87ece" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <focusTraversalPolicyProvider value="true"/>
-          <focusable value="false"/>
-          <font name="Century Schoolbook" size="42" style="1"/>
-          <foreground color="-13152923"/>
-          <text value="Choose a method:"/>
-        </properties>
-      </component>
       <component id="a3194" class="javax.swing.JLabel" binding="CryptingApp">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="2" use-parent-layout="false"/>
@@ -186,6 +174,18 @@
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
+      <component id="87ece" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusTraversalPolicyProvider value="true"/>
+          <focusable value="false"/>
+          <font name="Century Schoolbook" size="42" style="1"/>
+          <foreground color="-13152923"/>
+          <text value="Choose a method:"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

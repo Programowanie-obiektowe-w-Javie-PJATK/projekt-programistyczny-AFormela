@@ -5,8 +5,6 @@ import javax.swing.*;
 public class App extends JFrame {
     private JLabel MethodName;
     private JPanel CryptoMethod;
-    private JTextField InputText;
-    private JTextField OutputText;
     private JButton saveToFileButton;
     private JButton decryptButton;
     private JButton encryptButton;
@@ -14,6 +12,12 @@ public class App extends JFrame {
     private JButton mainMenuButton;
     private JTextField aValue;
     private JTextField bValue;
+    private JTextPane InputPanel;
+    private JPanel InputText;
+    private JPanel OutputText;
+    private JTextPane textPane1;
+    private JLabel labelA;
+    private JLabel labelB;
     private JPanel appPanel;
 
     public App() {
