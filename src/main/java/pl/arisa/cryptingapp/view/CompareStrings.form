@@ -77,15 +77,6 @@
           <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <grid id="d66e0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-        <margin top="0" left="0" bottom="0" right="0"/>
-        <constraints>
-          <grid row="4" column="3" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties/>
-        <border type="none"/>
-        <children/>
-      </grid>
       <grid id="1a9a9" binding="FirstTextPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
@@ -100,7 +91,7 @@
         <children>
           <component id="5f582" class="javax.swing.JTextPane" binding="FirstText">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="2" use-parent-layout="false">
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
                 <minimum-size width="300" height="400"/>
                 <preferred-size width="300" height="400"/>
               </grid>
@@ -133,11 +124,19 @@
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="1" use-parent-layout="false">
                 <minimum-size width="300" height="200"/>
                 <preferred-size width="300" height="200"/>
+                <maximum-size width="300" height="900"/>
               </grid>
             </constraints>
             <properties>
+              <autoscrolls value="true"/>
+              <dragEnabled value="true"/>
+              <editable value="false"/>
               <font size="18" style="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
             </properties>
+            <clientProperties>
+              <JEditorPane.honorDisplayProperties class="java.lang.Boolean" value="false"/>
+            </clientProperties>
           </component>
         </children>
       </grid>
@@ -178,25 +177,31 @@
       <grid id="ae6f3" binding="SecondTextPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="3" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="400"/>
+            <preferred-size width="300" height="400"/>
+          </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <autoscrolls value="true"/>
+        </properties>
         <border type="line" title="Second Text" title-justification="2" title-position="2">
           <font name="Century" size="18" style="1"/>
           <title-color color="-13152923"/>
           <color color="-13152923"/>
         </border>
         <children>
-          <component id="c6703" class="javax.swing.JTextPane" binding="SecondText">
+          <component id="d5ac6" class="javax.swing.JTextPane" binding="SecondText">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="5" use-parent-layout="false">
-                <minimum-size width="300" height="400"/>
-                <preferred-size width="300" height="400"/>
-              </grid>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <focusable value="false"/>
+              <dragEnabled value="true"/>
+              <editable value="true"/>
+              <enabled value="true"/>
+              <focusable value="true"/>
               <font size="16" style="0"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
               <text value=""/>
             </properties>
           </component>
