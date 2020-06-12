@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pl.arisa.cryptingapp.view.App">
+  <grid id="27dc6" binding="CryptoMethod" layout-manager="GridLayoutManager" row-count="11" column-count="17" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="3" y="20" width="1410" height="1448"/>
+    </constraints>
+    <properties>
+      <minimumSize width="1410" height="1448"/>
+      <preferredSize width="1410" height="1448"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="15ff0" class="javax.swing.JLabel" binding="MethodName">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="17" vsize-policy="3" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Century" size="26" style="1"/>
+          <text value=" Method name"/>
+        </properties>
+      </component>
+      <vspacer id="b7c7d">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="7" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="a739d" class="javax.swing.JTextField" binding="InputText">
+        <constraints>
+          <grid row="4" column="1" row-span="2" col-span="15" vsize-policy="3" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="200"/>
+            <preferred-size width="150" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="54a" class="javax.swing.JTextField" binding="OutputText">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="15" vsize-policy="1" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="200"/>
+            <preferred-size width="150" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <vspacer id="ee211">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="11" vsize-policy="6" hsize-policy="1" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="2" height="5"/>
+            <preferred-size width="2" height="5"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="57eb3" class="javax.swing.JButton" binding="saveToFileButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="4" row-span="1" col-span="10" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save to file"/>
+        </properties>
+      </component>
+      <vspacer id="6ffe9">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="11" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="2" height="5"/>
+            <preferred-size width="2" height="5"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <component id="9fc23" class="javax.swing.JButton" binding="decryptButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="13" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Decrypt"/>
+        </properties>
+      </component>
+      <component id="ab746" class="javax.swing.JButton" binding="encryptButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Encrypt"/>
+        </properties>
+      </component>
+      <vspacer id="4e217">
+        <constraints>
+          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="ce31e" class="javax.swing.JButton" binding="readFromFileButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="13" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Century Schoolbook" size="18" style="1"/>
+          <text value="Read from file"/>
+        </properties>
+      </component>
+      <component id="10928" class="javax.swing.JButton" binding="mainMenuButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <font name="Century Schoolbook" size="18" style="1"/>
+          <text value="Main menu  "/>
+        </properties>
+      </component>
+      <hspacer id="8dbf9">
+        <constraints>
+          <grid row="1" column="12" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="68632">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="c2213">
+        <constraints>
+          <grid row="1" column="16" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="f4b8">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="103c2">
+        <constraints>
+          <grid row="9" column="14" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="19e22">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="2dc73">
+        <constraints>
+          <grid row="6" column="9" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="22015">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="e7d02">
+        <constraints>
+          <grid row="1" column="15" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="9d6e6">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="f8fa4" class="javax.swing.JTextField" binding="bValue">
+        <constraints>
+          <grid row="3" column="14" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="de275" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="13" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="b:"/>
+        </properties>
+      </component>
+      <vspacer id="fdf99">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="8a2b6">
+        <constraints>
+          <grid row="2" column="14" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="2547a" class="javax.swing.JTextField" binding="aValue">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="6ae80" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="a:"/>
+        </properties>
+      </component>
+      <hspacer id="f6169">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>

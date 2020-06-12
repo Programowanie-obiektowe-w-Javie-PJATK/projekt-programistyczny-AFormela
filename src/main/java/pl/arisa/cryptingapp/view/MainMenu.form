@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="pl.arisa.cryptingapp.view.MainMenu">
+  <grid id="27dc6" binding="MainPage" layout-manager="GridLayoutManager" row-count="17" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1410" height="1448"/>
+    </constraints>
+    <properties>
+      <minimumSize width="1410" height="1448"/>
+      <preferredSize width="1410" height="1448"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <vspacer id="7328e">
+        <constraints>
+          <grid row="8" column="3" row-span="5" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="5f1e3" class="javax.swing.JButton" binding="affineCodeButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="44"/>
+            <preferred-size width="300" height="44"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-10387044"/>
+          <borderPainted value="true"/>
+          <font name="Century" size="20" style="1"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Affine Code"/>
+        </properties>
+      </component>
+      <component id="d1480" class="javax.swing.JButton" binding="cesarCodeButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="44"/>
+            <preferred-size width="300" height="44"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10387044"/>
+          <borderPainted value="true"/>
+          <font name="Century" size="20" style="1"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+          <text value="Cesar Code"/>
+          <verticalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="87ece" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <focusTraversalPolicyProvider value="true"/>
+          <focusable value="false"/>
+          <font name="Century Schoolbook" size="42" style="1"/>
+          <foreground color="-13152923"/>
+          <text value="Choose a method:"/>
+        </properties>
+      </component>
+      <component id="a3194" class="javax.swing.JLabel" binding="CryptingApp">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font swing-font="Label.font"/>
+          <text value="CryptingApp"/>
+        </properties>
+      </component>
+      <component id="92eb8" class="javax.swing.JButton" binding="morseCodeButton" default-binding="true">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="44"/>
+            <preferred-size width="300" height="44"/>
+          </grid>
+        </constraints>
+        <properties>
+          <autoscrolls value="false"/>
+          <background color="-10387044"/>
+          <borderPainted value="true"/>
+          <contentAreaFilled value="true"/>
+          <focusable value="false"/>
+          <font name="Century" size="20" style="1"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="0"/>
+          <selected value="false"/>
+          <text value="Morse code"/>
+        </properties>
+      </component>
+      <vspacer id="74ab2">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="6e0b3">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="df5fd">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="7e2b">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="2"/>
+            <preferred-size width="1" height="2"/>
+            <maximum-size width="1" height="2"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="e3754">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="7" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <minimum-size width="1" height="2"/>
+            <preferred-size width="1" height="2"/>
+            <maximum-size width="1" height="2"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="12d1">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="eba94">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="46bd">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="add30">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="e0254">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="682ec">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="35b58">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="38481">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="a5083" class="javax.swing.JButton" binding="compareEncryptedTextsButton" default-binding="true">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Compare encrypted texts"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
