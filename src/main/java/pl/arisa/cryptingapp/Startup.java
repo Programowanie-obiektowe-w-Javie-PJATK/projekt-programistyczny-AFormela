@@ -6,10 +6,6 @@ import pl.arisa.cryptingapp.view.MainMenu;
 
 public class Startup {
     public static void main(String[] args) {
-        //MainView.show();
-        //ICrypter crypter = new CezarCrypter();
-        //System.out.println(crypter.compareCryptedValues("veni", "asdadsx"));
-
         MainMenu mainMenu = new MainMenu();
         mainMenu.setVisible(true);
     }

@@ -3,7 +3,7 @@ package pl.arisa.cryptingapp.crypter;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MorseCrypter extends Crypter {
+public class MorseCrypter extends Crypter implements ICrypter {
     private final HashMap<Character, String> _morseAlphabet = new HashMap<Character, String>() {{
         put('a', ".-");
         put('b', "-...");
@@ -72,6 +72,6 @@ public class MorseCrypter extends Crypter {
                 return entry.getKey();
             }
         }
-        return null;
+        throw new IllegalArgumentException("Can't decrypt value - not if morse dictionary");
     }
 }

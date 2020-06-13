@@ -21,7 +21,7 @@ public class FileManager implements IFileManager {
             }
             inputData.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Problem z otwarciem pliku");
+            System.out.println("Unexpected problem with opening file");
         }
         return text.toString().trim();
     }
@@ -34,7 +34,7 @@ public class FileManager implements IFileManager {
             output.println(value);
             output.close();
         } catch(IOException e) {
-            System.out.println("Problem z zapisem do pliku");
+            System.out.println("Unexpected problem with saving the file");
         }
     }
 }

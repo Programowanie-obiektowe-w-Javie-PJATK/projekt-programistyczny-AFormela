@@ -1,7 +1,9 @@
 package pl.arisa.cryptingapp.view;
 
+import pl.arisa.cryptingapp.crypter.CezarCrypter;
 import pl.arisa.cryptingapp.crypter.Crypter;
 import pl.arisa.cryptingapp.crypter.ICrypter;
+import pl.arisa.cryptingapp.crypter.MorseCrypter;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -32,7 +34,15 @@ public class CompareStrings extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ICrypter crypter = new Crypter();
-                String result = crypter.compareCryptedValues(FirstText.getText(), SecondText.getText());
+                String result = "";
+                try {
+                    String value1 = cryptWithCorrectCrypter(FirstText.getText());
+                    String value2 = cryptWithCorrectCrypter(SecondText.getText());
+
+                    result = crypter.compareCryptedValues(value1, value2);
+                } catch (Exception exception) {
+                    result = exception.getMessage();
+                }
                 ResultPane2.setText(result);
             }
         });
@@ -45,5 +55,13 @@ public class CompareStrings extends JFrame {
                 dispose();
             }
         });
+    }
+
+    private String cryptWithCorrectCrypter(String value) {
+        ICrypter crypter;
+        if(value.contains(".") || value.contains("-")) crypter = new MorseCrypter();
+        else crypter = new CezarCrypter();
+
+        return crypter.decrypt(value);
     }
 }

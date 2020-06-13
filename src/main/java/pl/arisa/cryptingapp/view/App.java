@@ -77,11 +77,16 @@ public class App extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String result;
-                if(cryptingType == CryptingType.AFFINE && !aValue.getText().isEmpty() && !bValue.getText().isEmpty()) {
-                    result = crypter.crypt(InputText.getText(), parseInt(aValue.getText()), parseInt(bValue.getText()));
-                } else {
-                    result = crypter.crypt(InputText.getText());
+                try {
+                    if(cryptingType == CryptingType.AFFINE && !aValue.getText().isEmpty() && !bValue.getText().isEmpty()) {
+                        result = crypter.crypt(InputText.getText(), parseInt(aValue.getText()), parseInt(bValue.getText()));
+                    } else {
+                        result = crypter.crypt(InputText.getText());
+                    }
+                } catch(Exception exception) {
+                    result = exception.getMessage();
                 }
+
                 OutputText.setText(result);
 
             }
@@ -91,11 +96,16 @@ public class App extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String result;
-                if(cryptingType == CryptingType.AFFINE && !aValue.getText().isEmpty() && !bValue.getText().isEmpty()) {
-                    result = crypter.decrypt(InputText.getText(), parseInt(aValue.getText()), parseInt(bValue.getText()));
-                } else {
-                    result = crypter.decrypt(InputText.getText());
+                try {
+                    if(cryptingType == CryptingType.AFFINE && !aValue.getText().isEmpty() && !bValue.getText().isEmpty()) {
+                        result = crypter.decrypt(InputText.getText(), parseInt(aValue.getText()), parseInt(bValue.getText()));
+                    } else {
+                        result = crypter.decrypt(InputText.getText());
+                    }
+                } catch(Exception exception) {
+                    result = exception.getMessage();
                 }
+
                 OutputText.setText(result);
             }
         });
@@ -103,15 +113,20 @@ public class App extends JFrame {
         readFromFileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFileChooser fileChooser = new JFileChooser();
-                fileChooser.setDialogTitle("Specify a file to load");
+                try {
+                    JFileChooser fileChooser = new JFileChooser();
+                    fileChooser.setDialogTitle("Specify a file to load");
 
-                int userSelection = fileChooser.showOpenDialog(getContentPane());
-                if(userSelection == JFileChooser.APPROVE_OPTION) {
-                    File fileToLoad = fileChooser.getSelectedFile();
-                    FileManager fileManager = new FileManager(fileToLoad.getPath());
-                    InputText.setText(fileManager.loadFromFile());
+                    int userSelection = fileChooser.showOpenDialog(getContentPane());
+                    if(userSelection == JFileChooser.APPROVE_OPTION) {
+                        File fileToLoad = fileChooser.getSelectedFile();
+                        FileManager fileManager = new FileManager(fileToLoad.getPath());
+                        InputText.setText(fileManager.loadFromFile());
+                    }
+                } catch(Exception exception) {
+                    InputText.setText(exception.getMessage());
                 }
+
             }
         });
 
