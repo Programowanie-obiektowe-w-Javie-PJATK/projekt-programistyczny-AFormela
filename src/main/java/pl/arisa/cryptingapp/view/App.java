@@ -19,8 +19,8 @@ public class App extends JFrame {
     private JPanel CryptoMethod;
     private JPanel InputTextPanel;
     private JPanel OutputTextPanel;
-    private JTextPane InputText;
-    private JTextPane OutputText;
+    private JTextArea InputText;
+    private JTextArea OutputText;
     private JButton saveToFileButton;
     private JButton decryptButton;
     private JButton encryptButton;
@@ -30,6 +30,8 @@ public class App extends JFrame {
     private JTextField bValue;
     private JLabel aLabel;
     private JLabel bLabel;
+    private JScrollPane OutputScroll;
+    private JScrollPane InputScroll;
     private JPanel appPanel;
     private ICrypter crypter;
     private CryptingType cryptingType;

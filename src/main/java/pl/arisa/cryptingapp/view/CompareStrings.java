@@ -12,14 +12,15 @@ import java.awt.event.ActionListener;
 public class CompareStrings extends JFrame {
     private JButton compareTextsButton;
     private JPanel CompareText;
-    private JTextPane SecondText;
-    private JTextPane FirstText;
+    private JTextArea SecondText;
+    private JTextArea FirstText;
     private JPanel FirstTextPanel;
     private JPanel SecondTextPanel;
     private JTextPane ResultPane2;
     private JPanel ResultPanel;
     private JButton returnToMenuButton;
     private JLabel CompareInsertedTexts;
+    private JScrollPane scrolling;
     private JPanel appPanel;
 
     public CompareStrings() {
